@@ -1,0 +1,177 @@
+
+inventoryui.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+pixmix-12pt
+  rotate: false
+  xy: 1, 1179
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+pixmix-16pt
+  rotate: false
+  xy: 1, 665
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+pixmix-20pt
+  rotate: false
+  xy: 515, 1179
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+pixmix-24pt
+  rotate: false
+  xy: 1, 151
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+bordered-slate-panel
+  rotate: false
+  xy: 515, 1095
+  size: 48, 48
+  split: 16, 16, 16, 16
+  pad: 8, 8, 8, 8
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+bordered-slate-panel-2x
+  rotate: false
+  xy: 1029, 1609
+  size: 48, 48
+  split: 16, 16, 16, 16
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+cream-panel
+  rotate: false
+  xy: 1, 101
+  size: 48, 48
+  split: 16, 16, 16, 16
+  pad: 8, 8, 8, 8
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+cream-panel-2x
+  rotate: false
+  xy: 1029, 1559
+  size: 48, 48
+  split: 16, 16, 16, 16
+  pad: 12, 12, 12, 12
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+exit-button-down
+  rotate: false
+  xy: 613, 1145
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+exit-button-up
+  rotate: false
+  xy: 1127, 1659
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+item-slot
+  rotate: false
+  xy: 565, 1111
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+metal-panel
+  rotate: false
+  xy: 1, 51
+  size: 48, 48
+  split: 16, 16, 16, 16
+  pad: 12, 12, 12, 12
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+slate-panel
+  rotate: false
+  xy: 51, 101
+  size: 48, 48
+  split: 16, 16, 16, 16
+  pad: 8, 8, 8, 8
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+slate-panel-2x
+  rotate: false
+  xy: 515, 1045
+  size: 48, 48
+  split: 16, 16, 16, 16
+  pad: 12, 12, 12, 12
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+text-button-down
+  rotate: false
+  xy: 515, 1145
+  size: 96, 32
+  split: 8, 8, 10, 10
+  orig: 96, 32
+  offset: 0, 0
+  index: -1
+text-button-up
+  rotate: false
+  xy: 1029, 1659
+  size: 96, 32
+  split: 8, 8, 8, 12
+  orig: 96, 32
+  offset: 0, 0
+  index: -1
+transparent-panel
+  rotate: false
+  xy: 51, 51
+  size: 48, 48
+  split: 16, 16, 16, 16
+  pad: 8, 8, 8, 8
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+transparent-panel-16x16
+  rotate: false
+  xy: 1079, 1641
+  size: 16, 16
+  split: 6, 6, 6, 6
+  pad: 4, 4, 4, 4
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+transparent-panel-2x
+  rotate: false
+  xy: 1, 1
+  size: 48, 48
+  split: 16, 16, 16, 16
+  pad: 12, 12, 12, 12
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+wood-panel
+  rotate: false
+  xy: 101, 101
+  size: 48, 48
+  split: 16, 16, 16, 16
+  pad: 8, 8, 8, 8
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+wood-panel-2x
+  rotate: false
+  xy: 515, 995
+  size: 48, 48
+  split: 16, 16, 16, 16
+  orig: 48, 48
+  offset: 0, 0
+  index: -1

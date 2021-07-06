@@ -1,0 +1,45 @@
+{
+	"conversations":
+	{
+		"1" :
+		{
+			"id" : 1,
+			"dialog" : "Violence for violence's sake is the rule of beasts."
+		},
+		
+		"2" : 
+		{
+			"id" : 2,
+			"dialog" : "I think it makes sense, when you think about it."
+		},
+		
+		"3" :
+		{
+			"id" : 3,
+			"dialog" : "What day is it today? Don't answer."
+		}
+	},
+
+	"associatedChoices":
+	{
+		"1" :
+		[
+			{
+				"class" : "interaction.ConversationChoice",
+				"sourceId" : 1,
+				"destinationId" : 2,
+				"choicePhrase" : "i... what??",
+				"conversationCommandEvent" : "NONE"
+			},
+			{
+				"class" : "interaction.ConversationChoice",
+				"sourceId" : 1,
+				"destinationId" : 2,
+				"choicePhrase" : "ok queen",
+				"conversationCommandEvent" : "NONE"
+			}
+		]
+	},
+	
+	"currentConversationId" : 1
+}

@@ -1,0 +1,304 @@
+{
+"berryTrees" :
+	[
+	{	"species" : "cheri_tree",
+		"produce" : "cheri_berry",
+		"animationConfig" :
+		[	{	"growthStage" : "SEED",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 0, "y": 1 }]
+			},
+			{	"growthStage" : "SPROUT",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 1, "y": 0 },
+								 { "x": 1, "y": 1 }]
+			},
+			{	"growthStage" : "SAPLING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 0, "y": 0 },
+								 { "x": 0, "y": 1 }]
+			},
+			{	"growthStage" : "FLOWERING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 1, "y": 0 },
+								 { "x": 1, "y": 1 }]
+			},
+			{	"growthStage" : "HARVESTABLE",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 2, "y": 0 },
+								 { "x": 2, "y": 1 }]
+			}
+		]
+	},
+	
+	{	"species" : "chesto_tree",
+		"produce" : "chesto_berry",
+		"animationConfig" :
+		[	{	"growthStage" : "SEED",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 0, "y": 1 }]
+			},
+			{	"growthStage" : "SPROUT",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 1, "y": 0 },
+								 { "x": 1, "y": 1 }]
+			},
+			{	"growthStage" : "SAPLING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 0, "y": 2 },
+								 { "x": 0, "y": 3 }]
+			},
+			{	"growthStage" : "FLOWERING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 1, "y": 2 },
+								 { "x": 1, "y": 3 }]
+			},
+			{	"growthStage" : "HARVESTABLE",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 2, "y": 2 },
+								 { "x": 2, "y": 3 }]
+			}
+		]
+	},
+	
+	{	"species" : "pecha_tree",
+		"produce" : "pecha_berry",
+		"animationConfig" :
+		[	{	"growthStage" : "SEED",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 0, "y": 1 }]
+			},
+			{	"growthStage" : "SPROUT",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 1, "y": 0 },
+								 { "x": 1, "y": 1 }]
+			},
+			{	"growthStage" : "SAPLING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 0, "y": 4 },
+								 { "x": 0, "y": 5 }]
+			},
+			{	"growthStage" : "FLOWERING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 1, "y": 4 },
+								 { "x": 1, "y": 5 }]
+			},
+			{	"growthStage" : "HARVESTABLE",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 2, "y": 4 },
+								 { "x": 2, "y": 5 }]
+			}
+		]
+	},
+	
+	{	"species" : "rawst_tree",
+		"produce" : "rawst_berry",
+		"animationConfig" :
+		[	{	"growthStage" : "SEED",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 0, "y": 1 }]
+			},
+			{	"growthStage" : "SPROUT",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 1, "y": 0 },
+								 { "x": 1, "y": 1 }]
+			},
+			{	"growthStage" : "SAPLING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 0, "y": 6 },
+								 { "x": 0, "y": 7 }]
+			},
+			{	"growthStage" : "FLOWERING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 1, "y": 6 },
+								 { "x": 1, "y": 7 }]
+			},
+			{	"growthStage" : "HARVESTABLE",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 2, "y": 6 },
+								 { "x": 2, "y": 7 }]
+			}
+		]
+	},
+	
+	{	"species" : "aspear_tree",
+		"produce" : "aspear_berry",
+		"animationConfig" :
+		[	{	"growthStage" : "SEED",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 0, "y": 1 }]
+			},
+			{	"growthStage" : "SPROUT",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 1, "y": 0 },
+								 { "x": 1, "y": 1 }]
+			},
+			{	"growthStage" : "SAPLING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 0, "y": 8 },
+								 { "x": 0, "y": 9 }]
+			},
+			{	"growthStage" : "FLOWERING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 1, "y": 8 },
+								 { "x": 1, "y": 9 }]
+			},
+			{	"growthStage" : "HARVESTABLE",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 2, "y": 8 },
+								 { "x": 2, "y": 9 }]
+			}
+		]
+	},
+	
+	{	"species" : "leppa_tree",
+		"produce" : "leppa_berry",
+		"animationConfig" :
+		[	{	"growthStage" : "SEED",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 0, "y": 1 }]
+			},
+			{	"growthStage" : "SPROUT",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 1, "y": 0 },
+								 { "x": 1, "y": 1 }]
+			},
+			{	"growthStage" : "SAPLING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 0, "y": 10 },
+								 { "x": 0, "y": 11 }]
+			},
+			{	"growthStage" : "FLOWERING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 1, "y": 10 },
+								 { "x": 1, "y": 11 }]
+			},
+			{	"growthStage" : "HARVESTABLE",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 2, "y": 10 },
+								 { "x": 2, "y": 11 }]
+			}
+		]
+	},
+	
+	{	"species" : "oran_tree",
+		"produce" : "oran_berry",
+		"animationConfig" :
+		[	{	"growthStage" : "SEED",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 0, "y": 1 }]
+			},
+			{	"growthStage" : "SPROUT",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 1, "y": 0 },
+								 { "x": 1, "y": 1 }]
+			},
+			{	"growthStage" : "SAPLING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 0, "y": 12 },
+								 { "x": 0, "y": 13 }]
+			},
+			{	"growthStage" : "FLOWERING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 1, "y": 12 },
+								 { "x": 1, "y": 13 }]
+			},
+			{	"growthStage" : "HARVESTABLE",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 2, "y": 12 },
+								 { "x": 2, "y": 13 }]
+			}
+		]
+	},
+	
+	{	"species" : "persim_tree",
+		"produce" : "persim_berry",
+		"animationConfig" :
+		[	
+			{	"growthStage" : "SEED",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 0, "y": 1 }]
+			},
+			{	"growthStage" : "SPROUT",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 1, "y": 0 },
+								 { "x": 1, "y": 1 }]
+			},
+			{	"growthStage" : "SAPLING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 0, "y": 14 },
+								 { "x": 0, "y": 15 }]
+			},
+			{	"growthStage" : "FLOWERING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 1, "y": 14 },
+								 { "x": 1, "y": 15 }]
+			},
+			{	"growthStage" : "HARVESTABLE",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 2, "y": 14 },
+								 { "x": 2, "y": 15 }]
+			}
+		]
+	},
+	
+	{	"species" : "lum_tree",
+		"produce" : "lum_berry",
+		"animationConfig" :
+		[	{	"growthStage" : "SEED",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 0, "y": 1 }]
+			},
+			{	"growthStage" : "SPROUT",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 1, "y": 0 },
+								 { "x": 1, "y": 1 }]
+			},
+			{	"growthStage" : "SAPLING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 0, "y": 16 },
+								 { "x": 0, "y": 17 }]
+			},
+			{	"growthStage" : "FLOWERING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 1, "y": 16 },
+								 { "x": 1, "y": 17 }]
+			},
+			{	"growthStage" : "HARVESTABLE",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 2, "y": 16 },
+								 { "x": 2, "y": 17 }]
+			}
+		]
+	},
+	
+	{	"species" : "sitrus_tree",
+		"produce" : "sitrus_berry",
+		"animationConfig" :
+		[	{	"growthStage" : "SEED",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 0, "y": 1 }]
+			},
+			{	"growthStage" : "SPROUT",
+				"texturePath" : ["sprites/planted-sprites.png"],
+				"gridPoints" :	[{ "x": 1, "y": 0 },
+								 { "x": 1, "y": 1 }]
+			},
+			{	"growthStage" : "SAPLING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 0, "y": 18 },
+								 { "x": 0, "y": 19 }]
+			},
+			{	"growthStage" : "FLOWERING",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" :	[{ "x": 1, "y": 18 },
+								 { "x": 1, "y": 19 }]
+			},
+			{	"growthStage" : "HARVESTABLE",
+				"texturePath" : ["sprites/berry-trees.png"],
+				"gridPoints" : [{ "x": 2, "y": 18 },
+								{ "x": 2, "y": 19 }]
+			}
+		]
+	} ]
+}

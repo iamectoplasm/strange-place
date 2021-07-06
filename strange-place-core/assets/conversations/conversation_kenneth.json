@@ -1,0 +1,43 @@
+{
+	"conversations":
+	{
+		"1" :
+		{
+			"id" : 1,
+			"dialog" : "Behold! My wares"
+		},
+		"2" :
+		{
+			"id" : 2,
+			"dialog" : "sweet"
+		},
+		"3" :
+		{
+			"id" : 3,
+			"dialog" : "understandable, have nice day"
+		}
+	},
+
+	"associatedChoices":
+	{
+		"1" :
+		[
+			{
+				"class" : "interaction.ConversationChoice",
+				"sourceId" : 1,
+				"destinationId" : 2,
+				"choicePhrase" : "okay, i'll behold",
+				"conversationCommandEvent" : "LOAD_STORE_INVENTORY"
+			},
+			{
+				"class" : "interaction.ConversationChoice",
+				"sourceId" : 1,
+				"destinationId" : 3,
+				"choicePhrase" : "no thx",
+				"conversationCommandEvent" : "NONE"
+			}
+		]
+	},
+	
+	"currentConversationId" : 1
+}

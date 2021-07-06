@@ -1,0 +1,31 @@
+{
+	"com.badlogic.gdx.graphics.Color":
+	{
+		"white":	{ "a": 1, "b": 1, "g": 1, "r": 1 },
+		"black":	{ "a": 1, "b": 0, "g": 0, "r": 0 }
+	},
+	
+    "com.badlogic.gdx.graphics.g2d.BitmapFont":
+    {
+        "default-font":	{ "file": "fonts/calibri-18pt.fnt" },
+        "small-font": {"file": "fonts/calibri-18pt.fnt"},
+        "large-font": {"file": "fonts/calibri-24pt.fnt"},
+        
+        "pixel-font-large": {"file": "fonts/pixmix-20pt.fnt"},
+        "pixel-font": {"file": "fonts/pixmix-16pt.fnt"},
+        "pixel-font-small": {"file": "fonts/pixmix-12pt.fnt"}
+    },
+    
+	"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle":
+	{
+        "default": { "font": "pixel-font" },
+		"inventory-item-count": { "font": "pixel-font-small", "fontColor": "black" },
+		"tooltip-label": {"font": "pixel-font-small", "fontColor": "black"}
+    },
+    
+	"com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle":
+	{
+		"default": { "titleFont": "default-font", "background": "toolbar-frame" },
+		"itembar": { "background": "toolbar-frame", "titleFont": "default-font"}
+	}
+}

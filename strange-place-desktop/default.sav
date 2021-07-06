@@ -1,0 +1,115 @@
+{
+playerInventory: [
+	{
+		class: inventory.items.InventoryItemLocation
+		itemTypeAtLocation: lunar_wing
+		numberItemsAtLocation: 1
+		itemNameProperty: Player_Inventory
+	}
+	{
+		class: inventory.items.InventoryItemLocation
+		locationIndex: 1
+		itemTypeAtLocation: magma_stone
+		numberItemsAtLocation: 1
+		itemNameProperty: Player_Inventory
+	}
+	{
+		class: inventory.items.InventoryItemLocation
+		locationIndex: 2
+		itemTypeAtLocation: old_charm
+		numberItemsAtLocation: 1
+		itemNameProperty: Player_Inventory
+	}
+	{
+		class: inventory.items.InventoryItemLocation
+		locationIndex: 3
+		itemTypeAtLocation: lunar_wing
+		numberItemsAtLocation: 1
+		itemNameProperty: Player_Inventory
+	}
+	{
+		class: inventory.items.InventoryItemLocation
+		locationIndex: 4
+		itemTypeAtLocation: cheri_berry
+		numberItemsAtLocation: 1
+		itemNameProperty: Player_Inventory
+	}
+	{
+		class: inventory.items.InventoryItemLocation
+		locationIndex: 5
+		itemTypeAtLocation: lum_berry
+		numberItemsAtLocation: 3
+		itemNameProperty: Player_Inventory
+	}
+	{
+		class: inventory.items.InventoryItemLocation
+		locationIndex: 6
+		itemTypeAtLocation: lum_berry
+		numberItemsAtLocation: 3
+		itemNameProperty: Player_Inventory
+	}
+	{
+		class: inventory.items.InventoryItemLocation
+		locationIndex: 7
+		itemTypeAtLocation: lum_berry
+		numberItemsAtLocation: 3
+		itemNameProperty: Player_Inventory
+	}
+	{
+		class: inventory.items.InventoryItemLocation
+		locationIndex: 8
+		itemTypeAtLocation: chesto_berry
+		numberItemsAtLocation: 1
+		itemNameProperty: Player_Inventory
+	}
+	{
+		class: inventory.items.InventoryItemLocation
+		locationIndex: 9
+		itemTypeAtLocation: pecha_berry
+		numberItemsAtLocation: 1
+		itemNameProperty: Player_Inventory
+	}
+	{
+		class: inventory.items.InventoryItemLocation
+		locationIndex: 10
+		itemTypeAtLocation: oran_berry
+		numberItemsAtLocation: 1
+		itemNameProperty: Player_Inventory
+	}
+	{
+		class: inventory.items.InventoryItemLocation
+		locationIndex: 11
+		itemTypeAtLocation: leppa_berry
+		numberItemsAtLocation: 1
+		itemNameProperty: Player_Inventory
+	}
+	{
+		class: inventory.items.InventoryItemLocation
+		locationIndex: 12
+		itemTypeAtLocation: rawst_berry
+		numberItemsAtLocation: 1
+		itemNameProperty: Player_Inventory
+	}
+	{
+		class: inventory.items.InventoryItemLocation
+		locationIndex: 13
+		itemTypeAtLocation: aspear_berry
+		numberItemsAtLocation: 1
+		itemNameProperty: Player_Inventory
+	}
+	{
+		class: inventory.items.InventoryItemLocation
+		locationIndex: 14
+		itemTypeAtLocation: persim_berry
+		numberItemsAtLocation: 1
+		itemNameProperty: Player_Inventory
+	}
+	{
+		class: inventory.items.InventoryItemLocation
+		locationIndex: 15
+		itemTypeAtLocation: sitrus_berry
+		numberItemsAtLocation: 1
+		itemNameProperty: Player_Inventory
+	}
+]
+}

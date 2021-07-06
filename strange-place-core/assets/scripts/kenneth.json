@@ -1,0 +1,44 @@
+{
+"name"		: "Kenneth",
+"state"	: "IDLE",
+"direction"		: "DOWN",
+"conversationConfigPath" : "conversations/conversation_kenneth.json",
+"animationConfig" : [
+		{	"animationType"	: "WALK_DOWN",
+			"texturePath"	: ["sprites/kenneth.png"],
+			"gridPoints"	: [ { "x": 0, "y": 0 },
+						  		{ "x": 0, "y": 1 },
+						 		{ "x": 0, "y": 2 },
+						  		{ "x": 0, "y": 3 } ]
+		},
+		{	"animationType" : "WALK_LEFT",
+			"texturePath" 	: ["sprites/kenneth.png"],
+			"gridPoints" 	: [ { "x": 1, "y": 0 },
+								{ "x": 1, "y": 1 },
+								{ "x": 1, "y": 2 },
+								{ "x": 1, "y": 3 } ]
+		},
+		{	"animationType" : "WALK_RIGHT",
+			"texturePath" 	: ["sprites/kenneth.png"],
+			"gridPoints" 	: [ { "x": 2, "y": 0 },
+								{ "x": 2, "y": 1 },
+								{ "x": 2, "y": 2 },
+								{ "x": 2, "y": 3 } ]
+		},
+		{	"animationType" : "WALK_UP",
+			"texturePath" 	: ["sprites/kenneth.png"],
+			"gridPoints" 	: [ { "x": 3, "y": 0 },
+								{ "x": 3, "y": 1 },
+								{ "x": 3, "y": 2 },
+								{ "x": 3, "y": 3 } ]
+		} ],
+"inventory" : [
+	{
+		"itemID": "cherry",
+		"itemCount": 3
+	},
+	{
+		"itemID": "smooth_rock",
+		"itemCount": 2
+	} ]
+}

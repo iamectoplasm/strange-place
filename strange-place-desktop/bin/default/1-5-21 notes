@@ -1,0 +1,19 @@
+- characters live on map???????????
+- so have map config file that contains entity info-- which entity exists, where they start,
+	if there's crops growing??????????
+	
+- when a new map gets brought up need to deserialize all the info of entities that live on it
+
+
+- what does the MapManager do what do i do
+
+
+
+- okay so like instead of using map location classes to load npcs in, instead read json file associated w/
+	specific map being called
+- like seriously.... why am i using java classes for that. i think that's a holdover from the book i was following???
+
+
+
+
+- JSON FILES JSON FILES REPLACE THE WEIRD STUFF WITH JSON FILES

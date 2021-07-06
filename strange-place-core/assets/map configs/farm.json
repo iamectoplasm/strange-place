@@ -1,0 +1,10 @@
+{
+	"generalPlayerStart": {"x": 6, "y": 22},
+	
+	"npcs":
+	[{
+		"npc": "ALDER",
+		"npcStart": {"x": 12, "y": 11}
+	}]
+	
+}

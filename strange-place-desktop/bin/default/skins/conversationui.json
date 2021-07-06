@@ -1,0 +1,47 @@
+{
+	"com.badlogic.gdx.graphics.Color":
+	{
+		"white":	{ "a": 1, "b": 1, "g": 1, "r": 1 },
+		"black":	{ "a": 1, "b": 0, "g": 0, "r": 0 }
+	},
+	
+    "com.badlogic.gdx.graphics.g2d.BitmapFont":
+    {
+        "default-font":	{ "file": "fonts/calibri-18pt.fnt" },
+        "small-font": {"file": "fonts/calibri-18pt.fnt"},
+        "large-font": {"file": "fonts/calibri-24pt.fnt"},
+        
+        "pixel-font-large": {"file": "fonts/pixmix-20pt.fnt"},
+        "pixel-font": {"file": "fonts/pixmix-16pt.fnt"},
+        "pixel-font-small": {"file": "fonts/pixmix-12pt.fnt"}
+    },
+    
+	"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle":
+	{
+        "default": { "font": "default-font" },
+		"conversation-name-label": {"font": "default-font", "fontColor": "black"}
+    },
+    
+	"com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle":
+	{
+		"default": { "titleFont": "default-font", "background": "dialog-box" },
+		"dialog-window": { "titleFont": "default-font", "background": "dialog-box" }
+	},
+
+	"com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle":
+	{
+		"default": { "down": "exit-dialogue-button", "up": "exit-dialogue-button", "font": "default-font", "fontColor": "white" },
+		"conversation-exit": { "down": "exit-dialogue-button", "up": "exit-dialogue-button", "font": "pixel-font-large", "fontColor": "black"}
+	},
+
+	"com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle":
+	{
+		"default": { "vScroll": "exit-dialogue-button", "hScrollKnob": "exit-dialogue-button", "background": "dialog-response", "hScroll": "exit-dialogue-button", "vScrollKnob": "exit-dialogue-button" },
+		"conversation-choice-pane": {"vScroll": "exit-dialogue-button", "hScrollKnob": "exit-dialogue-button", "background": "dialog-response", "hScroll": "exit-dialogue-button", "vScrollKnob": "exit-dialogue-button" }
+	},
+	
+	"com.badlogic.gdx.scenes.scene2d.ui.List$ListStyle":
+	{
+		"default": { "fontColorUnselected": "black", "selection": "exit-dialogue-button", "fontColorSelected": "white", "font": "default-font" }
+	}
+}

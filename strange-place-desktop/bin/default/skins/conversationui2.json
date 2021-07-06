@@ -1,0 +1,61 @@
+{
+"com.badlogic.gdx.graphics.g2d.BitmapFont": {
+	"calibri-18pt": {
+		"file": "fonts/calibri-18pt.fnt"
+	},
+	"calibri-24pt": {
+		"file": "fonts/calibri-24pt.fnt"
+	},
+	"calibri-30pt": {
+		"file": "fonts/calibri-30pt.fnt"
+	},
+	"pixmix-16pt": {
+		"file": "fonts/pixmix-16pt.fnt"
+	},
+	"pixmix-20pt": {
+		"file": "fonts/pixmix-20pt.fnt"
+	},
+	"pixmix-24pt": {
+		"file": "fonts/pixmix-24pt.fnt"
+	}
+},
+"com.badlogic.gdx.graphics.Color": {
+	"black": {
+		"r": 0,
+		"g": 0,
+		"b": 0,
+		"a": 1
+	},
+	"white": {
+		"r": 1,
+		"g": 1,
+		"b": 1,
+		"a": 1
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+	"nametag": {
+		"font": "pixmix-20pt",
+		"fontColor": "white",
+		"background": "nametag"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle": {
+	"dialogue-option": {
+		"font": "pixmix-16pt",
+		"fontColor": "black",
+		"downFontColor": "white"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle": {
+	"conversation-box": {
+		"background": "conversation-box",
+		"titleFont": "pixmix-16pt",
+		"titleFontColor": "black"
+	},
+	"dialogue-box": {
+		"background": "dialogue-box",
+		"titleFont": "pixmix-16pt"
+	}
+}
+}

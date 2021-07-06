@@ -1,0 +1,102 @@
+{
+"name"				: "Sylvana",
+"state"				: "IDLE",
+"direction"			: "DOWN",
+"animationConfig" : [
+		{	"animationType"	: "WALK_DOWN",
+			"texturePath"	: ["sprites/player.png"],
+			"gridPoints"	: [ { "x": 0, "y": 0 },
+						  		{ "x": 0, "y": 1 },
+						 		{ "x": 0, "y": 2 },
+						  		{ "x": 0, "y": 3 } ]
+		},
+		{	"animationType" : "WALK_LEFT",
+			"texturePath" 	: ["sprites/player.png"],
+			"gridPoints" 	: [ { "x": 1, "y": 0 },
+								{ "x": 1, "y": 1 },
+								{ "x": 1, "y": 2 },
+								{ "x": 1, "y": 3 } ]
+		},
+		{	"animationType" : "WALK_RIGHT",
+			"texturePath" 	: ["sprites/player.png"],
+			"gridPoints" 	: [ { "x": 2, "y": 0 },
+								{ "x": 2, "y": 1 },
+								{ "x": 2, "y": 2 },
+								{ "x": 2, "y": 3 } ]
+		},
+		{	"animationType" : "WALK_UP",
+			"texturePath" 	: ["sprites/player.png"],
+			"gridPoints" 	: [ { "x": 3, "y": 0 },
+								{ "x": 3, "y": 1 },
+								{ "x": 3, "y": 2 },
+								{ "x": 3, "y": 3 } ]
+		} ],
+		
+"inventory" : [
+	{
+		"itemID": "lunar_wing",
+		"itemCount": 1
+	},
+	{
+		"itemID": "magma_stone",
+		"itemCount": 1
+	},
+	{
+		"itemID": "old_charm",
+		"itemCount": 1
+	},
+	{
+		"itemID": "lunar_wing",
+		"itemCount": 1
+	},
+	{
+		"itemID": "cheri_berry",
+		"itemCount": 1
+	},
+	{
+		"itemID": "lum_berry",
+		"itemCount": 3
+	},
+	{
+		"itemID": "lum_berry",
+		"itemCount": 3
+	},
+	{
+		"itemID": "lum_berry",
+		"itemCount": 3
+	},
+	{
+		"itemID": "chesto_berry",
+		"itemCount": 1
+	},
+	{
+		"itemID": "pecha_berry",
+		"itemCount": 1
+	},
+	{
+		"itemID": "oran_berry",
+		"itemCount": 1
+	},
+	{
+		"itemID": "leppa_berry",
+		"itemCount": 1
+	},
+	{
+		"itemID": "rawst_berry",
+		"itemCount": 1
+	},
+	{
+		"itemID": "aspear_berry",
+		"itemCount": 1
+	},
+	{
+		"itemID": "persim_berry",
+		"itemCount": 1
+	},
+	{
+		"itemID": "sitrus_berry",
+		"itemCount": 1
+	} ],
+	
+"money" : 100
+}

@@ -1,0 +1,22 @@
+{
+	"generalPlayerStart": {"x": 37, "y": 25},
+	
+	"npcs":
+	[{
+		"npc": "PUNK",
+		"npcStart": {"x": 18, "y": 29}
+	},
+	{
+		"npc": "RUBY",
+		"npcStart": {"x": 6, "y": 17}
+	},
+	{
+		"npc": "KENNETH",
+		"npcStart": {"x": 24, "y": 14}
+	},
+	{
+		"npc": "BIANCA",
+		"npcStart": {"x": 37, "y": 8}
+	}]
+	
+}

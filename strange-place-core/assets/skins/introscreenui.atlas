@@ -1,0 +1,20 @@
+
+introscreenui.png
+size: 512,256
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+button_background
+  rotate: false
+  xy: 2, 2
+  size: 131, 27
+  orig: 131, 27
+  offset: 0, 0
+  index: -1
+main_menu_background
+  rotate: false
+  xy: 2, 31
+  size: 256, 192
+  orig: 256, 192
+  offset: 0, 0
+  index: -1

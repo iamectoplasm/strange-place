@@ -1,0 +1,45 @@
+{
+	"conversations":
+	{
+		"1" :
+		{
+			"id" : 1,
+			"dialog" : "Hello, child! what a lovely place to find yourself in today."
+		},
+		
+		"2" : 
+		{
+			"id" : 2,
+			"dialog" : "yes, yes, good, good! So good to see the youths of today leading their best lives!"
+		},
+		
+		"3" :
+		{
+			"id" : 3,
+			"dialog" : "Behold, then! Two of us, roughly the same age!"
+		}
+	},
+
+	"associatedChoices":
+	{
+		"1" :
+		[
+			{
+				"class" : "interaction.ConversationChoice",
+				"sourceId" : 1,
+				"destinationId" : 2,
+				"choicePhrase" : "i am in my 20's",
+				"conversationCommandEvent" : "NONE"
+			},
+			{
+				"class" : "interaction.ConversationChoice",
+				"sourceId" : 1,
+				"destinationId" : 3,
+				"choicePhrase" : "we look like we;re roughly the same age??",
+				"conversationCommandEvent" : "NONE"
+			}
+		]
+	},
+	
+	"currentConversationId" : 1
+}

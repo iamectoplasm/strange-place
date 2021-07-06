@@ -1,0 +1,14 @@
+{
+	"generalPlayerStart": {"x": 4, "y": 20},
+	
+	"npcs":
+	[{
+		"npc": "PUNK",
+		"npcStart": {"x": 16, "y": 17}
+	},
+	{
+		"npc": "JOI",
+		"npcStart": {"x": 21, "y": 5}
+	}]
+	
+}

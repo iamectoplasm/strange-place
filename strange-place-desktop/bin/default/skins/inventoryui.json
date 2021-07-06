@@ -1,0 +1,80 @@
+{
+"com.badlogic.gdx.graphics.g2d.BitmapFont": {
+	"pixmix-12pt": {
+		"file": "fonts/pixmix-12pt.fnt"
+	},
+	"pixmix-16pt": {
+		"file": "fonts/pixmix-16pt.fnt"
+	},
+	"pixmix-20pt": {
+		"file": "fonts/pixmix-20pt.fnt"
+	},
+	"pixmix-24pt": {
+		"file": "fonts/pixmix-24pt.fnt"
+	}
+},
+"com.badlogic.gdx.graphics.Color": {
+	"black": {
+		"r": 0,
+		"g": 0,
+		"b": 0,
+		"a": 1
+	},
+	"grey": {
+		"r": 0.7133333,
+		"g": 0.7133333,
+		"b": 0.7133333,
+		"a": 1
+	},
+	"white": {
+		"r": 1,
+		"g": 1,
+		"b": 1,
+		"a": 1
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+	"default": {
+		"font": "pixmix-16pt",
+		"fontColor": "black"
+	},
+	"inventory-tooltip": {
+		"font": "pixmix-16pt",
+		"fontColor": "black",
+		"background": "slate-panel"
+	},
+	"item-count": {
+		"font": "pixmix-12pt",
+		"fontColor": "black",
+		"background": "transparent-panel-16x16"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle": {
+	"item-action": {
+		"font": "pixmix-16pt",
+		"fontColor": "white",
+		"downFontColor": "grey",
+		"up": "text-button-up",
+		"down": "text-button-down"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.TextTooltip$TextTooltipStyle": {
+	"default": {
+		"label": "default"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle": {
+	"default": {
+		"titleFont": "pixmix-20pt",
+		"titleFontColor": "black"
+	},
+	"inventory-window": {
+		"background": "wood-panel",
+		"titleFont": "pixmix-24pt"
+	},
+	"tooltip-window": {
+		"titleFont": "pixmix-12pt",
+		"titleFontColor": "black"
+	}
+}
+}

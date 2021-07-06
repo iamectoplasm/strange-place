@@ -1,0 +1,39 @@
+{
+	"conversations":
+	{
+		"1" :
+		{
+			"id" : 1,
+			"dialog" : "Hello! Welcome to my F A R M L A N D S."
+		},
+		
+		"2" : 
+		{
+			"id" : 2,
+			"dialog" : "Corpuscle? Quite far away from here. That's all that I know."
+		}
+	},
+
+	"associatedChoices":
+	{
+		"1" :
+		[
+			{
+				"class" : "interaction.ConversationChoice",
+				"sourceId" : 1,
+				"destinationId" : 2,
+				"choicePhrase" : "Where might I find Corpuscle from here?",
+				"conversationCommandEvent" : "NONE"
+			},
+			{
+				"class" : "interaction.ConversationChoice",
+				"sourceId" : 1,
+				"destinationId" : 1,
+				"choicePhrase" : "neat",
+				"conversationCommandEvent" : "EXIT_CONVERSATION"
+			}
+		]
+	},
+	
+	"currentConversationId" : 1
+}

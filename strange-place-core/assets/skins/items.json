@@ -1,0 +1,110 @@
+[
+{
+	"itemAttributes": 2,
+	"itemValue": 5,
+	"itemTypeID": "cherry",
+	"itemShortDescription": "it is jus a simple cherry. fun i guess?"
+},
+{
+	"itemAttributes": 1,
+	"itemValue": 5,
+	"itemTypeID": "damp_rock",
+	"itemShortDescription": "what a moist boy!"
+},
+{
+	"itemAttributes": 1,
+	"itemValue": 4,
+	"itemTypeID": "heat_rock",
+	"itemShortDescription": "take this with you if you want to be HOTTER"
+},
+{
+	"itemAttributes": 1,
+	"itemValue": 3,
+	"itemTypeID": "icy_rock",
+	"itemShortDescription": "wat's cOler than coldy freeze? really cold!!!! OKAY OKAY OKAY OKAY OKAY"
+},
+{
+	"itemAttributes": 1,
+	"itemValue": 12,
+	"itemTypeID": "lunar_wing",
+	"itemShortDescription": "to be honest, i don't know what this is supposed to do, either"
+},
+{
+	"itemAttributes": 1,
+	"itemValue": 2,
+	"itemTypeID": "magma_stone",
+	"itemShortDescription": "now with a 40% more chance of destroying ur diamonds!"
+},
+{
+	"itemAttributes": 2,
+	"itemValue": 21,
+	"itemTypeID": "old_charm",
+	"itemShortDescription": "go ahead, eat me. eat me and hear colors."
+},
+{
+	"itemAttributes": 1,
+	"itemValue": 5,
+	"itemTypeID": "smooth_rock",
+	"itemShortDescription": "there's something calming to you about just how gosh-darn smooth this rock is."
+},
+{
+	"itemAttributes": 7,
+	"itemValue": 10,
+	"itemTypeID": "cheri_berry",
+	"itemShortDescription": "This bright red Berry is very spicy and has a provocative flavor. It blooms with delicate, pretty flowers."
+},
+{
+	"itemAttributes": 7,
+	"itemValue": 10,
+	"itemTypeID": "chesto_berry",
+	"itemShortDescription": "This Berry's thick skin and fruit are very tough and dry tasting. However, every bit of it can be eaten."
+},
+{
+	"itemAttributes": 7,
+	"itemValue": 10,
+	"itemTypeID": "pecha_berry",
+	"itemShortDescription": "Very sweet and delicious. Also very tender - handle with care."
+},
+{
+	"itemAttributes": 7,
+	"itemValue": 10,
+	"itemTypeID": "rawst_berry",
+	"itemShortDescription": "If the leaves grow longer and curlier than average, this Berry will have a somewhat-bitter taste."
+},
+{
+	"itemAttributes": 7,
+	"itemValue": 10,
+	"itemTypeID": "aspear_berry",
+	"itemShortDescription": "The hard Berry is dense with a rich juice. It is quite sour."
+},
+{
+	"itemAttributes": 7,
+	"itemValue": 10,
+	"itemTypeID": "leppa_berry",
+	"itemShortDescription": "It takes longer to grow than Berries such as Cheri. The smaller Berries taste better."
+},
+{
+	"itemAttributes": 7,
+	"itemValue": 10,
+	"itemTypeID": "oran_berry",
+	"itemShortDescription": "Nature's gifts came together as one in this Berry. It has a wondrous mix of flavors that spread in the mouth."
+},
+{
+	"itemAttributes": 7,
+	"itemValue": 10,
+	"itemTypeID": "persim_berry",
+	"itemShortDescription": "The more this berry absorbs energy from sunlight, the more vividly colorful it grows."
+},
+{
+	"itemAttributes": 7,
+	"itemValue": 10,
+	"itemTypeID": "lum_berry",
+	"itemShortDescription": "Slow to grow. If raised with loving care, it may grow two Berries."
+},
+{
+	"itemAttributes": 7,
+	"itemValue": 10,
+	"itemTypeID": "sitrus_berry",
+	"itemShortDescription": "Sitrus came from the same family as Oran. It is larger and smoother tasting than Oran."
+}
+]

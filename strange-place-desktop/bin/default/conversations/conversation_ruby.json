@@ -1,0 +1,45 @@
+{
+	"conversations":
+	{
+		"1" :
+		{
+			"id" : 1,
+			"dialog" : "Don't even talk to me."
+		},
+		
+		"2" : 
+		{
+			"id" : 2,
+			"dialog" : "remind me not to talk 2 you again, chatty cathy >:("
+		},
+		
+		"3" :
+		{
+			"id" : 3,
+			"dialog" : "yeah."
+		}
+	},
+
+	"associatedChoices":
+	{
+		"1" :
+		[
+			{
+				"class" : "interaction.ConversationChoice",
+				"sourceId" : 1,
+				"destinationId" : 2,
+				"choicePhrase" : "Okay",
+				"conversationCommandEvent" : "NONE"
+			},
+			{
+				"class" : "interaction.ConversationChoice",
+				"sourceId" : 1,
+				"destinationId" : 3,
+				"choicePhrase" : "...",
+				"conversationCommandEvent" : "NONE"
+			}
+		]
+	},
+	
+	"currentConversationId" : 1
+}
