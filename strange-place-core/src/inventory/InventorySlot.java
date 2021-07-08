@@ -48,8 +48,8 @@ public class InventorySlot extends Stack implements InventorySlotSubject
 		
 		//Image slotBackground = new Image(AssetHandler.INVENTORY_TEXTUREATLAS.createSprite("item-slot"));
 		Image slotBackground = new Image(new NinePatch(AssetHandler.INVENTORY_TEXTUREATLAS.createSprite("cream-panel")));
-		slotBackground.setHeight(64);
-		slotBackground.setWidth(64);
+		//slotBackground.setHeight(64);
+		//slotBackground.setWidth(64);
 		
 		itemBackground.add(slotBackground);
 		itemBackground.setName("item_slot");

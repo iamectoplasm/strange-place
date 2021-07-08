@@ -33,40 +33,33 @@ public class InventorySlotSource extends Source
 		//Gdx.app.debug(TAG, "\tParameters are: event = " + event + ", x = " + x + ", y = " + y + ", pointer = " + pointer);
 		
 		Payload payload = new Payload();
-
-		//Actor actor = getActor();
-		InventoryItem item = (InventoryItem) getActor();
 		
-		//if (actor == null)
+		InventoryItem item = (InventoryItem) getActor();
+		int countRemoved = 0;
+		
 		if (item == null)
 		{
-			//Gdx.app.debug(TAG, "Creating an Actor through getActor() returned null");
 			return null;
 		}
 		
-		//Gdx.app.debug(TAG, "\tHave now called getActor(), which has returned " + item.getItemTypeID());
-
-		//InventorySlot source = (InventorySlot) actor.getParent();
-		InventorySlot source = (InventorySlot) item.getParent();
+		InventorySlot sourceSlot = (InventorySlot) item.getParent();
 		
-		if (source == null)
+		if (sourceSlot == null)
 		{
 			//Gdx.app.debug(TAG, "Creating an InventorySource through actor.getParent() returned null");
 			return null;
 		}
 		else
 		{
-			this.sourceSlot = source;
+			this.sourceSlot = sourceSlot;
 		}
-
-		//sourceSlot = (InventorySlot) actor.getParent();
-		//sourceSlot.decrementItemCount(true);
 		
 		Image dragActorImage = (Image) getActor();
 		
 		Actor dragActor = new Image(dragActorImage.getDrawable());
 		
-		dragActor.setScale(1.5f);
+		//dragActor.setScale(1.5f);
+		dragActor.setScale(2f);
 
 		payload.setDragActor(dragActor);
 		
@@ -90,7 +83,7 @@ public class InventorySlotSource extends Source
 		{
 			//InventoryItem payloadItem = (InventoryItem) payload.getObject();
 			//sourceSlot.add(payloadItem);
-			//sourceSlot.addItem(payloadItem);
+			//sourceSlot.addItem(payloadItem, sourceSlot.getNumItems());
 		}
 	}
 

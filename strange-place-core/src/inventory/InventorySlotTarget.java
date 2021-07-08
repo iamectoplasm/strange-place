@@ -55,7 +55,7 @@ public class InventorySlotTarget extends Target
 		InventoryItem sourceItem = (InventoryItem) payload.getObject();
 		//InventoryItem sourceActor = (InventoryItem) source.getActor();
 		
-		if (sourceItem == null)
+		if (sourceItem == null || targetSlot.equals(sourceSlot))
 		{
 			//Gdx.app.debug(TAG, "\tsourceItem is null! now returning...");
 			return;

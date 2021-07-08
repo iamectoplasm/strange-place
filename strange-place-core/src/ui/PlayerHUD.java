@@ -28,6 +28,7 @@ import ecs.components.Sprite;
 import ecs.systems.InteractionSystem;
 import game.EntityFactory;
 import interaction.ConversationGraph;
+import inventory.InventorySlot;
 import inventory.items.InventoryItem;
 import inventory.items.InventoryItem.ItemTypeID;
 import inventory.items.InventoryItemLocation;
@@ -35,6 +36,7 @@ import maps.MapManager;
 import observers.InteractionObserver;
 import observers.ConversationGraphObserver;
 import observers.InventoryObserver;
+import observers.ItemBarObserver;
 import observers.StoreInventoryObserver;
 import observers.ToolbarObserver;
 import saves.ProfileManager;
@@ -57,7 +59,7 @@ public class PlayerHUD implements Screen,
 								  ProfileObserver,
 								  ConversationGraphObserver,
 								  InteractionObserver,
-								  ToolbarObserver,
+								  ItemBarObserver,
 								  InventoryObserver,
 								  StoreInventoryObserver
 		{
@@ -70,11 +72,11 @@ public class PlayerHUD implements Screen,
 	private Viewport viewport;
 	private Camera camera;
 	private Entity player;
-
-	//private ToolbarUI optionsUI;
+	
 	private InventoryUI playerInventoryUI;
 	private StoreInventoryUI storeInventoryUI;
 	private ConversationUI conversationUI;
+	private ItembarUI itembarUI;
 
 	private Json json;
 	private MapManager mapManager;
@@ -104,15 +106,15 @@ public class PlayerHUD implements Screen,
 
 		this.playerInventoryUI = new InventoryUI();
 		playerInventoryUI.setVisible(false);
-		playerInventoryUI.setPosition((viewport.getWorldWidth() / 2) - (playerInventoryUI.getWidth() / 2f), viewport.getWorldHeight() - (playerInventoryUI.getHeight() * 2f));
+		playerInventoryUI.setPosition((viewport.getScreenWidth() / 2) - (playerInventoryUI.getWidth() / 2f), viewport.getScreenHeight() - (playerInventoryUI.getHeight() * 2f));
 		playerInventoryUI.setKeepWithinStage(false);
 		playerInventoryUI.setMovable(true);
 
 		this.storeInventoryUI = new StoreInventoryUI();
 		storeInventoryUI.setVisible(false);
-		storeInventoryUI.setPosition(0, 0);
+		storeInventoryUI.setPosition((viewport.getScreenWidth() / 2) - (storeInventoryUI.getWidth() / 2f), viewport.getScreenHeight() - (storeInventoryUI.getHeight()));
 		storeInventoryUI.setKeepWithinStage(false);
-		storeInventoryUI.setWidth(400f);
+		//storeInventoryUI.setWidth(400f);
 		storeInventoryUI.setPlayerMoney(100);
 
 		this.conversationUI = new ConversationUI();
@@ -120,17 +122,21 @@ public class PlayerHUD implements Screen,
 		conversationUI.setMovable(true);
 		conversationUI.setPosition(0, 0);
 		conversationUI.setWidth(400f);
-		conversationUI.setHeight(conversationUI.getHeight());
-
-		//stage.addActor(optionsUI);
+		//conversationUI.setHeight(conversationUI.getHeight());
+		
+		this.itembarUI = new ItembarUI();
+		itembarUI.setVisible(true);
+		itembarUI.setX((viewport.getScreenWidth() / 2) - itembarUI.getWidth() / 2f);
+		
 		stage.addActor(playerInventoryUI);
 		stage.addActor(storeInventoryUI);
 		stage.addActor(conversationUI);
-
-		//optionsUI.validate();
+		stage.addActor(itembarUI);
+		
 		playerInventoryUI.validate();
 		storeInventoryUI.validate();
 		conversationUI.validate();
+		itembarUI.validate();
 
 		// Add tooltips
 		Array<Actor> actors = playerInventoryUI.getInventoryActors();
@@ -149,6 +155,7 @@ public class PlayerHUD implements Screen,
 		this.playerInventoryUI.addInventoryObserver(this);
 		this.storeInventoryUI.addObserver(this);
 		this.playerInventoryUI.getItemsActionWindow().addInventoryObserver(this);
+		this.itembarUI.addItemBarObserver(this);
 
 		// Listeners
 		stage.addListener(new InputListener()
@@ -332,6 +339,9 @@ public class PlayerHUD implements Screen,
 											  InventoryUI.PLAYER_INVENTORY,
 											  false);
 			}
+			
+			//Gdx.app.debug(TAG, "Test calling notifyItemBarObservers with UPDATE_BAR...");
+			//itembarUI.notifyItemBarObservers(null, ItemBarEvent.UPDATE_BAR);
 			break;
 			
 		case SAVING_PROFILE:
@@ -397,54 +407,6 @@ public class PlayerHUD implements Screen,
 	 * = = = = = = = = = = = = = = = Component notifications = = = = = = = = = = = =
 	 * = = =
 	 */
-	/*
-	@Override
-	public void onInteractionObserverNotify(String value, InteractionEvent event)
-	{
-		switch (event)
-		{
-		case LOAD_CONVERSATION:
-			Gdx.app.debug(TAG, "\tNow in LOAD_CONVERSATION in PlayerHUD's onInteractionObserverNotify");
-			
-			CharConfig config = json.fromJson(CharConfig.class, value);
-
-			//conversationUI.loadConversation(config);
-			conversationUI.loadConversation(config.getEntityName(), config.getConversationConfigPath());
-			conversationUI.getCurrentConversationGraph().addConversationGraphObserver(this);
-			
-			Gdx.app.debug(TAG, "\tNow exiting LOAD_CONVERSATION in PlayerHUD's onInteractionObserverNotify");
-			break;
-			
-		case SHOW_CONVERSATION:
-			Gdx.app.debug(TAG, "\tNow in SHOW_CONVERSATION in PlayerHUD's onInteractionObserverNotify");
-			
-			CharConfig configShow = json.fromJson(CharConfig.class, value);
-
-			if (configShow.getEntityName().equalsIgnoreCase(conversationUI.getCurrentEntityName()))
-			{
-				conversationUI.setVisible(true);
-			}
-			
-			Gdx.app.debug(TAG, "\tNow exiting SHOW_CONVERSATION in PlayerHUD's onInteractionObserverNotify");
-			break;
-			
-		case HIDE_CONVERSATION:
-			Gdx.app.debug(TAG, "\tNow in HIDE_CONVERSATION in PlayerHUD's onInteractionObserverNotify");
-			
-			CharConfig configHide = json.fromJson(CharConfig.class, value);
-			if (configHide.getEntityName().equalsIgnoreCase(conversationUI.getCurrentEntityName()))
-			{
-				conversationUI.setVisible(false);
-			}
-			
-			Gdx.app.debug(TAG, "\tNow in HIDE_CONVERSATION in PlayerHUD's onInteractionObserverNotify");
-			break;
-
-		default:
-			break;
-		}
-	}
-	*/
 	@Override
 	public void onInteractionObserverNotify(InteractionEvent event, String name, String conversationPath)
 	{
@@ -568,10 +530,30 @@ public class PlayerHUD implements Screen,
 	 * = = = = = = = = = = = = = = = Status event = = = = = = = = = = = = = = =
 	 */
 	@Override
-	public void onToolbarBarNotify(int value, StatusEvent event)
+	public void onItemBarNotify(InventorySlot slot, ItemBarEvent event)
 	{
-		// TODO Auto-generated method stub
+		switch(event)
+		{
+		case UPDATE_BAR:
+			Gdx.app.debug(TAG, "In onItemBarNotify() in UPDATE_BAR");
+			Array<InventorySlot> topSlotsCopy = new Array<InventorySlot>();
+			topSlotsCopy.addAll(playerInventoryUI.getTopRowSlots());
+			itembarUI.setInventorySlots(topSlotsCopy);
+			break;
+			
+		case UPDATE_SELECTED_ITEM:
+			
+			break;
+			
+		case USE_SELECTED_ITEM:
+			
+			break;
+			
+			default:
+				break;
+		}
 	}
+	
 	// - - - - - - - - - - - - - - -
 	// End of notifications
 	// - - - - - - - - - - - - - - -

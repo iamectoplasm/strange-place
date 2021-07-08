@@ -106,7 +106,7 @@ playerInventory: [
 	}
 	{
 		class: inventory.items.InventoryItemLocation
-		locationIndex: 15
+		locationIndex: 16
 		itemTypeAtLocation: sitrus_berry
 		numberItemsAtLocation: 1
 		itemNameProperty: Player_Inventory

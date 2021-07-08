@@ -20,17 +20,16 @@ public class InventorySlotTooltip extends Window
 		
 		//this.description = new Label("", skin, "tooltip-label");
 		this.description = new Label("", skin, "inventory-tooltip");
-		this.description.setWrap(true);
-		this.description.setFillParent(true);
 		//this.description.setWrap(true);
+		//this.description.setFillParent(true);
 		
 		this.add(description);
-		//this.pad(10f, 10f, 10f, 10f);
-		//this.setWidth(100f);
+		this.pad(10f, 10f, 10f, 10f);
+		this.setWidth(100f);
 		this.pack();
 		
-		//this.setVisible(false);
-		this.setVisible(true);
+		this.setVisible(false);
+		//this.setVisible(true);
 	}
 	
 	public void setVisible(InventorySlot inventorySlot, boolean visible)

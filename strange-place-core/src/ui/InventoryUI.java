@@ -334,6 +334,18 @@ public class InventoryUI extends Window implements InventorySubject, InventorySl
 	{
 		return itemActionsWindow;
 	}
+	
+	public Array<InventorySlot> getTopRowSlots()
+	{
+		Array<InventorySlot> topRowSlots = new Array<InventorySlot>();
+		
+		for(int i = 0; i < 10; i++)
+		{
+			topRowSlots.add(inventorySlots.get(i));
+		}
+		
+		return topRowSlots;
+	}
 
 	/*
 	 * = = = = = = = = = = = = = = = = = = = =
@@ -400,23 +412,6 @@ public class InventoryUI extends Window implements InventorySubject, InventorySl
 			firstEmptySlot.addItem(inventoryItem, 1);
 			dragAndDrop.addSource(new InventorySlotSource(firstEmptySlot, dragAndDrop));
 		}
-
-		//for (int index = 0; index < sourceCells.size; index++)
-		//{
-		//	InventorySlot inventorySlot = ((InventorySlot) sourceCells.get(index).getActor());
-		//	if (inventorySlot == null)
-		//		continue;
-//
-		//	int numItems = inventorySlot.getNumItems();
-		//	if (numItems == 0)
-		//	{
-		//		InventoryItem inventoryItem = InventoryItemFactory.getInstance().getInventoryItem(itemID);
-		//		inventoryItem.setName(itemName);
-		//		inventorySlot.addItem(inventoryItem, 1);
-		//		dragAndDrop.addSource(new InventorySlotSource(inventorySlot, dragAndDrop));
-		//		break;
-		//	}
-		//}
 	}
 
 	@SuppressWarnings("rawtypes")

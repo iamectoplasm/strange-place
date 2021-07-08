@@ -43,8 +43,10 @@ public class StoreInventoryUI extends Window implements InventorySlotObserver, S
 	private static DragAndDrop dragAndDrop;
 	private Array<Actor> inventoryActors;
 
-	private final int slotWidth = 32;
-	private final int slotHeight = 32;
+	//private final int slotWidth = 32;
+	//private final int slotHeight = 32;
+	private final int SLOT_WIDTH = 64;
+	private final int SLOT_HEIGHT = 64;
 
 	private InventorySlotTooltip inventorySlotTooltip;
 
@@ -150,7 +152,7 @@ public class StoreInventoryUI extends Window implements InventorySlotObserver, S
 			dragAndDrop.addTarget(new InventorySlotTarget(storeInventorySlot));
 			storeInventorySlot.addInventorySlotObserver(this);
 
-			storeInventorySlotTable.add(storeInventorySlot).size(slotWidth, slotHeight);
+			storeInventorySlotTable.add(storeInventorySlot).size(SLOT_WIDTH, SLOT_HEIGHT);
 
 			if (i % lengthSlotRow == 0)
 			{
@@ -168,7 +170,7 @@ public class StoreInventoryUI extends Window implements InventorySlotObserver, S
 			dragAndDrop.addTarget(new InventorySlotTarget(playerInventorySlot));
 			playerInventorySlot.addInventorySlotObserver(this);
 
-			playerInventorySlotTable.add(playerInventorySlot).size(slotWidth, slotHeight);
+			playerInventorySlotTable.add(playerInventorySlot).size(SLOT_WIDTH, SLOT_HEIGHT);
 
 			if (i % lengthSlotRow == 0)
 			{
@@ -193,7 +195,7 @@ public class StoreInventoryUI extends Window implements InventorySlotObserver, S
 		this.add(playerInventorySlotTable).row();
 		this.add(playerTotalLabel);
 		
-		this.setScale(1.5f);
+		//this.setScale(1.5f);
 		//this.setScale(2f);
 		
 		//storeInventorySlotTable.setTouchable(Touchable.enabled);
