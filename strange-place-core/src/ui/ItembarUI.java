@@ -1,5 +1,6 @@
 package ui;
 
+import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.Window;
 import com.badlogic.gdx.utils.Array;
@@ -20,6 +21,7 @@ public class ItembarUI extends Window implements ItemBarSubject
 	private Array<InventorySlot> inventorySlots;
 	
 	private int selectedIndex;
+	private Image selectedOverlay;
 	
 	private final int SLOT_WIDTH = 32;
 	private final int SLOT_HEIGHT = 32;
@@ -34,14 +36,16 @@ public class ItembarUI extends Window implements ItemBarSubject
 		layoutTable = new Table();
 		layoutTable.padLeft(10);
 		
-		selectedIndex = 0;
-		
 		for(int i = 0; i < 10; i++)
 		{
 			InventorySlot newSlot = new InventorySlot(i);
 			inventorySlots.add(newSlot);
 			layoutTable.add(newSlot).size(SLOT_WIDTH, SLOT_HEIGHT).padRight(10);
 		}
+		
+		selectedIndex = 0;
+		selectedOverlay = new Image(AssetHandler.ITEMBAR_TEXTUREATLAS.createSprite("toolbar-selection-overlay"));
+		inventorySlots.get(selectedIndex).add(selectedOverlay);
 		
 		this.add(layoutTable).row();
 		
@@ -55,6 +59,26 @@ public class ItembarUI extends Window implements ItemBarSubject
 			InventorySlot itemBarSlot = inventorySlots.get(i);
 			InventorySlot newSlot = newSlots.get(i);
 			inventorySlots.get(i).addItem(newSlot.getInventoryItem(), newSlot.getNumItems());
+		}
+	}
+	
+	public void moveSelectedRight()
+	{
+		if(selectedIndex < 9)
+		{
+			inventorySlots.get(selectedIndex).removeActor(selectedOverlay);
+			selectedIndex += 1;
+			inventorySlots.get(selectedIndex).add(selectedOverlay);
+		}
+	}
+	
+	public void moveSelectedLeft()
+	{
+		if(selectedIndex > 0)
+		{
+			inventorySlots.get(selectedIndex).removeActor(selectedOverlay);
+			selectedIndex -= 1;
+			inventorySlots.get(selectedIndex).add(selectedOverlay);
 		}
 	}
 

@@ -111,7 +111,7 @@ mago_berry
   index: -1
 old_charm
   rotate: false
-  xy: 784, 2
+  xy: 818, 2
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
@@ -161,6 +161,13 @@ sitrus_berry
 smooth_rock
   rotate: false
   xy: 308, 2
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+watering-can
+  rotate: false
+  xy: 784, 2
   size: 32, 32
   orig: 32, 32
   offset: 0, 0

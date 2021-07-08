@@ -3,12 +3,12 @@ package ui;
 import com.artemis.Entity;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
+import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
-import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Array;
@@ -16,7 +16,6 @@ import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 
-import configs.CharConfig;
 import configs.CharConfig.InventoryConfig;
 import configs.CropDeserializer;
 import configs.CropConfig.Crop;
@@ -38,7 +37,6 @@ import observers.ConversationGraphObserver;
 import observers.InventoryObserver;
 import observers.ItemBarObserver;
 import observers.StoreInventoryObserver;
-import observers.ToolbarObserver;
 import saves.ProfileManager;
 import saves.ProfileObserver;
 import utility.CropConfigSystem;
@@ -56,6 +54,7 @@ import utility.CropConfigSystem;
  *
  */
 public class PlayerHUD implements Screen,
+								  InputProcessor,
 								  ProfileObserver,
 								  ConversationGraphObserver,
 								  InteractionObserver,
@@ -157,21 +156,9 @@ public class PlayerHUD implements Screen,
 		this.playerInventoryUI.getItemsActionWindow().addInventoryObserver(this);
 		this.itembarUI.addItemBarObserver(this);
 
+		//this.getStage().setScrollFocus(itembarUI);
+		
 		// Listeners
-		stage.addListener(new InputListener()
-		{
-			@Override
-			public boolean keyDown (InputEvent event, int keycode)
-			{
-				if(keycode == Input.Keys.E)
-				{
-					playerInventoryUI.setVisible(playerInventoryUI.isVisible() ? false : true);
-					playerInventoryUI.getItemsActionWindow().setVisible(playerInventoryUI.getItemsActionWindow().isVisible() ? false : true);
-				}
-				return false;
-			}
-		});
-
 		conversationUI.getCloseButton().addListener(new ClickListener()
 		{
 			@Override
@@ -552,6 +539,67 @@ public class PlayerHUD implements Screen,
 			default:
 				break;
 		}
+	}
+
+	@Override
+	public boolean keyDown(int keycode) {
+		if(keycode == Input.Keys.E)
+		{
+			playerInventoryUI.setVisible(playerInventoryUI.isVisible() ? false : true);
+			playerInventoryUI.getItemsActionWindow().setVisible(playerInventoryUI.getItemsActionWindow().isVisible() ? false : true);
+		}
+		return false;
+	}
+
+	@Override
+	public boolean keyUp(int keycode) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean keyTyped(char character) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean touchDragged(int screenX, int screenY, int pointer) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean mouseMoved(int screenX, int screenY) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean scrolled(int amount)
+	{
+		Gdx.app.debug(TAG, "Scrolled for amount " + amount);
+		if(amount == 1)
+		{
+			itembarUI.moveSelectedRight();
+		}
+		else
+		{
+			itembarUI.moveSelectedLeft();
+		}
+		return false;
 	}
 	
 	// - - - - - - - - - - - - - - -

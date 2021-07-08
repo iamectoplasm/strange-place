@@ -12,6 +12,9 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.maps.tiled.tiles.AnimatedTiledMapTile;
 import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.scenes.scene2d.EventListener;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.InputListener;
 
 import ecs.components.Position;
 import ecs.components.Sprite;
@@ -101,12 +104,16 @@ public class MainGameScreen implements Screen
 
 		multiplexer = new InputMultiplexer();
 		multiplexer.addProcessor(playerHUD.getStage());
+		multiplexer.addProcessor(playerHUD);
 
 		multiplexer.addProcessor(playerInput);
 
-		Gdx.input.setInputProcessor(multiplexer);
+		//Gdx.input.setInputProcessor(multiplexer);
 		
 		ProfileManager.getInstance().addObserver(mapManager);
+		ProfileManager.getInstance().addObserver(playerHUD);
+		
+		//ProfileManager.getInstance().addObserver(mapManager);
 	}
 	
 	@Override
@@ -114,8 +121,8 @@ public class MainGameScreen implements Screen
 	{
 		Gdx.input.setInputProcessor(multiplexer);
 		
-		ProfileManager.getInstance().addObserver(mapManager);
-		ProfileManager.getInstance().addObserver(playerHUD);
+		//ProfileManager.getInstance().addObserver(mapManager);
+		//ProfileManager.getInstance().addObserver(playerHUD);
 		
 		setGameState(GameState.LOADING);
 		

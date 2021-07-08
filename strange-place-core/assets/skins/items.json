@@ -106,5 +106,11 @@
 	"itemValue": 10,
 	"itemTypeID": "sitrus_berry",
 	"itemShortDescription": "Sitrus came from the same family as Oran. It is larger and smoother tasting than Oran."
+},
+{
+	"itemAttributes": 7,
+	"itemValue": 10,
+	"itemTypeID": "watering_can",
+	"itemShortDescription": "water things with it"
 }
 ]

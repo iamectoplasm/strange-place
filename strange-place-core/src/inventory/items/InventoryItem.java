@@ -27,6 +27,7 @@ public class InventoryItem extends Image
 		persim_berry,
 		lum_berry,
 		sitrus_berry,
+		watering_can,
 		none;
 	}
 
@@ -96,8 +97,6 @@ public class InventoryItem extends Image
 	public InventoryItem(TextureRegion textureRegion,
 						 ItemTypeID itemTypeID,
 						 int itemAttributes,
-						 int itemUseType,
-						 int itemUseTypeValue,
 						 int itemValue)
 	{
 		super(textureRegion);
