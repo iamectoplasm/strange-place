@@ -1,8 +1,8 @@
 
 # Strange Place
 
-I'm using LibGDX to make a RPG game that no one else wants (except for me) mostly to practice my coding and logic-ing in between being busy w/ computer science degree in university
+I'm using LibGDX to make a RPG game as a fun side project!
 
 Building it up based off of the book Mastering LibGDX Game Development by Patrick Hoey
 
-nintendo i know im using your sprites, for i am a programmer and not an artist, pls dont sue
+Nintendo, I know I am using your sprites because I am but a simple programmer who cannot for the life of her create art, so please forgive me. I'm using all this as practice, not for the purpose of making money or claiming any of the art as my own!
